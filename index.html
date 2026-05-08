@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai tap JS buoi 5</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div class="container">
+        <h3>Bài 1: Quản lý tuyển sinh</h3>
+
+        <input type="number" placeholder="Điểm chuẩn" id="diemChuan">
+        <input type="number" placeholder="Điểm môn 1" id="diem1">
+        <input type="number" placeholder="Điểm môn 2" id="diem2">
+        <input type="number" placeholder="Điểm môn 3" id="diem3">
+
+        <select id="khuVuc">
+            <option value="X">Không thuộc khu vực ưu tiên</option>
+            <option value="A">Khu vực A</option>
+            <option value="B">Khu vực B</option>
+            <option value="C">Khu vực C</option>
+        </select>
+
+        <select id="doiTuong">
+            <option value="0">Không thuộc đối tượng ưu tiên</option>
+            <option value="1">Đối tượng 1</option>
+            <option value="2">Đối tượng 2</option>
+            <option value="3">Đối tượng 3</option>
+        </select>
+
+        <button id="btnTinh1">Tính kết quả</button>
+
+        <p id="p_Info1"></p>
+
+        <hr>
+
+        <h3>Bài 2: Tính tiền điện</h3>
+
+        <input type="text" placeholder="Tên chủ hộ" id="tenChuHo">
+        <input type="number" placeholder="Số Kw" id="soKw">
+
+        <button id="btnTinh2">Tính tiền điện</button>
+
+        <p id="p_Info2"></p>
+
+        <hr>
+
+        <h3>Bài 3: Tính thuế thu nhập cá nhân</h3>
+        <input type="text" placeholder="Họ tên" id="hoTen3">
+        <input type="number" placeholder="Tổng thu nhập năm (tr)" id="tongThuNhap3">
+        <input type="number" placeholder="Số người phụ thuộc" id="soNguoi3">
+
+        <button id="btnTinh3">Tính thuế</button>
+
+        <p id="p_Info3"></p>
+
+        <hr>
+
+        <h3>Bài 4: Tính tiền cáp</h3>
+        <input type="text" placeholder="Mã khách hàng" id="maKhachHang">
+
+        <div class="radio-group">
+            <label>
+                <input type="radio" name="loaiKhach" id="nhaDan" checked>
+                Nhà dân
+            </label>
+            <label>
+                <input type="radio" name="loaiKhach" id="doanhNghiep">
+                Doanh nghiệp
+            </label>
+        </div>
+
+        <input type="number" placeholder="Số kết nối" id="soKetNoi">
+        <input type="number" placeholder="Số kênh cao cấp" id="soKenh">
+
+        <button id="btnTinh4">Tính</button>
+
+        <p id="p_Info4"></p>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
